@@ -1,0 +1,305 @@
+[
+    {
+      "id": 1,
+      "question": "Avec quelle propriété CSS 2.1 peut-on arrondir les coins d'un bloc ?",
+      "propositions": [
+        "border-crop",
+        "border-radius",
+        "-moz-border-radius",
+        "Aucune"
+      ],
+      "reponse": "Aucune",
+      "en savoir +": "Aucune propriété CSS 2.1 ne permet cet effet."
+    },
+    {
+      "id": 2,
+      "question": "À partir de quelle version d'Internet Explorer peut-on utiliser nativement les éléments de section HTML5 (sans hack ou script complémentaire) ?",
+      "propositions": [
+        "Internet Explorer 7",
+        "Internet Explorer 8",
+        "Internet Explorer 9",
+        "Internet Explorer 10"
+        
+      ],
+      "reponse": "Internet Explorer 9",
+      "en savoir +": "Internet Explorer reconnaît à partir de la version 9 les éléments de section (header, footer, section, nav, aside, article)"
+    },
+    {
+      "id": 3,
+      "question": "Quel est le rapport entre Java et JavaScript ?",
+      "propositions": [
+        "C'est le même langage, mais le nom  JavaScript  est utilisé pour le code s'exécutant dans une page Web. ",
+        "Ce sont deux langages différents, malgré quelques points communs dans la syntaxe.",
+        "Java est une version améliorée de JavaScript.",
+        "Java est une île, ça n'a rien à voir !"
+      ],
+      "reponse": "Ce sont deux langages différents, malgré quelques points communs dans la syntaxe.",
+      "en savoir +": "Le nom  JavaScript  a été choisi en raison des similitudes de syntaxe"
+    },
+    {
+      "id": 4,
+      "question": "Laquelle de ces syntaxes est correcte ?",
+      "propositions": [
+        "if (a != 2) {} ",
+        "if a != 2 {}",
+        "if (a <> 2) {} ",
+        "if a <> 2 {}"
+      ],
+      "reponse": "if (a != 2) {} ",
+      "en savoir +": "La condition d'un if doit toujours être entourée de parenthèses. L'opérateur différent de s'écrit != en JavaScript."
+    },
+    {
+      "id": 5,
+      "question": "Quel attribut des noeuds de l'arbre DOM correspond à l'attribut (X)HTML class ?",
+      "propositions": [
+        "class ",
+        "CLASS",
+        "className",
+        "name"
+      ],
+      "reponse": "className",
+      "en savoir +": "Il n'a pas été possible d'utiliser class dans le DOM car c'est un mot-clé réservé pour les futures versions de la spécification ECMAScript."
+    },
+    {
+      "id": 6,
+      "question": "Dans un fichier JavaScript externe (.js), il faut:",
+      "propositions": [
+        "Entourer le code avec les balises <script> et </script>.",
+        "Préciser l’encodage du fichier avec la règle @charset. ",
+        "Echapper les caractères spéciaux (X)HTML.",
+        "Aucune des réponses précédentes."
+      ],
+      "reponse": "Aucune des réponses précédentes.",
+      "en savoir +": "L’un des avantages du fait d’utiliser un fichier externe est justement de s’affranchir des problèmes d’inclusion du code JavaScript dans une page (X)HTML. On n’a donc pas à utiliser les balises <script> et </script>, et les caractères spéciaux (X)HTML n’ont pas à être échappés. Quant à l’encodage, il doit être déclaré dans l’en-tête HTTP Content-Type."
+    },
+    {
+      "id": 7,
+      "question": "Lequel de ces types d'événements n'existe pas ?",
+      "propositions": [
+        "blur",
+        "load",
+        "mouseclick",
+        "mouseout"
+      ],
+      "reponse": "mouseclick",
+      "en savoir +": "Il faut utiliser click, qui a d'ailleurs l'avantage de se déclencher aussi avec l'activation par le clavier."
+    },
+    {
+      "id": 8,
+      "question": "Quelle méthode n'existe pas dans le DOM?",
+      "propositions": [
+        "document.getElementsByClassName ",
+        "document.getElementsByTagName",
+        "document.getElementsByAttribute",
+        "document.getElementById"
+      ],
+      "reponse": "document.getElementsByAttribute",
+      "en savoir +": "On peut rechercher les éléments par classe, id, nom de balise (tag)."
+    },
+    {
+      "id": 9,
+      "question": "Laquelle de ces propositions est un nom de variable valide en JavaScript ?",
+      "propositions": [
+        "var",
+        "2a",
+        "NaN",
+        "$b"
+      ],
+      "reponse": "$b",
+      "en savoir +": "var est un mot-clé ; 2a n'est pas valide car un identifiant ne peut pas commencer par un chiffre ; int est un mot-clé réservé pour les futures versions de la spécification ECMAScript."
+    },
+    {
+      "id": 10,
+      "question": "Dans une boucle, l'instruction continue permet de:",
+      "propositions": [
+        "Continuer l'exécution du code après la boucle.",
+        "Passer à l'itération suivante. ",
+        "Revenir au début de l'itération courante. ",
+        "Supprimer toutes les variables globales."
+      ],
+      "reponse": "passer à l'itération suivante. ",
+      "en savoir +": "Il est à noter que cette instruction peut être associée à un label."
+    },
+    {
+      "id": 11,
+      "question": "var iNum = 12; iNum %= 2; A la suite de cette expression, combien vaut iNum ?",
+      "propositions": [
+        "6",
+        "14",
+        "0.12",
+        "0"
+      ],
+      "reponse": "0",
+      "en savoir +": "Le modulo suivi de l'affectation divise la variable iNum par 2 puis affecte le reste de la division à iNum, soit zéro."
+    },
+    {
+      "id": 12,
+      "question": "Quelle méthode permet de comparer deux chaînes texte ?",
+      "propositions": [
+        "charAt() ",
+        "charCodeAt() ",
+        "indexOf() ",
+        "localeCompare()"
+      ],
+      "reponse": "localeCompare()",
+      "en savoir +": "La bonne réponse est localeCompare()."
+    },
+    {
+      "id": 13,
+      "question": "Le positionnement relatif (position: relative)...",
+      "propositions": [
+        "Permet de positionner un élément par rapport à un autre élément, pris comme repère;",
+        "Permet de positionner un élément par rapport aux limites de son élément parent;",
+        "Permet d'appliquer la théorie de la relativité générale ET la théorie de la relativité restreinte à une mise en page.",
+        "Permet de décaler un élément A par rapport à sa position normale, en flux"
+      ],
+      "reponse": "permet de décaler un élément A par rapport à sa position normale, en flux",
+      "en savoir +": "Le positionnement relatif est très semblable au positionnement statique (position: static) qu'adoptent par défaut les éléments d'une page. Un élément positionné en relatif prendra sa place normale dans le flux du document (en fonction de la succession des éléments dans le code HTML, des marges des éléments, des éléments flottants...), mais sera décalé par rapport à cette position de base."
+    },
+    {
+      "id": 14,
+      "question": "Si j'écris a:active {color: red;} dans ma feuille de style, quels liens seront de couleur rouge ?",
+      "propositions": [
+        "Les liens pointant vers des pages mises à jour régulièrement",
+        "Les liens pointant vers la page en cours (par exemple dans un menu de navigation)",
+        "N'importe quel lien de la page, mais uniquement au moment où on clique sur ce lien",
+        "N'importe quel lien de la page, mais uniquement au moment où on survole ce lien avec le pointeur de la souris"
+      ],
+      "reponse": "N'importe quel lien de la page, mais uniquement au moment où on clique sur ce lien",
+      "en savoir +": "La pseudo-classe CSS :active permet de passer des propriétés CSS à une ancre (un lien), propriétés qui ne s'appliqueront qu'à l'état activé, c'est à dire au moment où on active le lien avec la souris, en cliquant dessus."
+    },
+    {
+      "id": 15,
+      "question": "Que signifie l'acronyme AJAX ?",
+      "propositions": [
+        "Advanced JavaScript with XMLHttpRequest.",
+        "Asynchronous JavaScript and XML.",
+        "JavaScript extensible.",
+        "Rien, c’est juste une suite de lettres sans aucune signification."
+      ],
+      "reponse": "Asynchronous JavaScript and XML",
+      "en savoir +": "Asynchronous JavaScript and XML signifie XML et JavaScript asynchrones. "
+    },
+    {
+      "id": 16,
+      "question": "Quand l'événement load se déclenche-t-il pour une page ?",
+      "propositions": [
+        "Dès que le navigateur commence à recevoir le code HTML.",
+        "Quand le code HTML a fini d'être chargé.",
+        "Quand l'arbre DOM a été construit.",
+        "Quand l'arbre DOM a été construit et toutes les ressources chargées (images, ...)."
+      ],
+      "reponse": "Quand l'arbre DOM a été construit et toutes les ressources chargées (images, ...).",
+      "en savoir +": "Ce comportement peut d'ailleurs être parfois gênant si l'on veut éviter un clignotement  au chargement de la page. Il faut alors se tourner vers des solutions propriétaires comme l'événement DOMContentLoaded supporté par Firefox et Opera."
+    },
+    {
+      "id": 17,
+      "question": "Que peut-on dire de l'attribut innerHTML ?",
+      "propositions": [
+        "C'est un attribut qui n'est pas spécifié dans le DOM, mais qui est plutôt bien supporté par les navigateurs modernes. ",
+        "C'est un attribut spécifié dans le DOM.",
+        "C'est un attribut qui n'est supporté que par Internet Explorer.",
+        "C'est un attribut qui ne fonctionne pas le vendredi."
+      ],
+      "reponse": "C'est un attribut qui n'est pas spécifié dans le DOM, mais qui est plutôt bien supporté par les navigateurs modernes. ",
+      "en savoir +": "innerHTML a été créé par Microsoft, mais est supporté de façon plutôt homogène par les navigateurs modernes (à part dans certains cas particuliers, par exemple les premières versions de Firefox pour un document servi en tant que application/xhtml+xml)."
+    },
+    {
+      "id": 18,
+      "question": "Quelle est la méthode spécifiée dans le DOM-2 pour l'ajout des gestionnaires d'événements ?",
+      "propositions": [
+        "addEventListener",
+        "attachEvent",
+        "attachEventListener",
+        "listen"
+      ],
+      "reponse": "addEventListener",
+      "en savoir +": "attachEvent est l'équivalent propriétaire de cette méthode pour IE."
+    },
+    {
+      "id": 19,
+      "question": "Depuis quand sont disponibles les arrow functions ?",
+      "propositions": [
+        "JavaScript 1.7",
+        "ECMAScript 6",
+        "ECMAScript 7",
+        "ECMAScript 2018"
+      ],
+      "reponse": "ECMAScript 6",
+      "en savoir +": ""
+    },
+    {
+      "id": 20,
+      "question": "Parmi les propositions suivantes, laquelle n'est pas une valeur de la propriété ?",
+      "propositions": [
+        "list-item",
+        "inline-block",
+        "table-legend",
+        "inline-table"
+      ],
+      "reponse": "table-legend",
+      "en savoir +": "La propriété CSS display accepte de nombreuses valeurs. Sans compter la valeur générique inherit, 16 valeurs possibles en tout d'après la spécification CSS 2.1. Parmi ces 16 valeurs, 10 concernent les affichages de type tableau. Comme par exemple la valeur table-caption, que vous avez sans doute confondu avec notre réponse erronée, table-legend. Cette dernière n'existe pas."
+    },
+    {
+      "id": 21,
+      "question": "Quel élément sépare la propriété de sa valeur ?",
+      "propositions": [
+        "Le signe espace ( )",
+        "Le signe égal (=)",
+        "Le signe point (.)",
+        "Le signe deux points (:)"
+      ],
+      "reponse": "Le signe deux points (:)",
+      "en savoir +": "La propriété font-size est séparée de sa valeur (exprimée ici en unité variable -em) par deux points :"
+    },
+    {
+      "id": 22,
+      "question": "Combien de règles peut contenir un fichier CSS ?",
+      "propositions": [
+        "100",
+        "150",
+        "Si le poids du fichier n'excède pas 20Ko, c'est tout bon",
+        "Il n'y a pas de limite, on peut en créer autant que l'on veut"
+      ],
+      "reponse": "Il n'y a pas de limite, on peut en créer autant que l'on veut",
+      "en savoir +": "Un fichier CSS n'est limité ni par son poids, ni par le nombre de ses règles. Vous pouvez donc coder de gros fichiers mais pensez quand même à les optimiser !"
+    },
+    {
+      "id": 23,
+      "question": "Que signifie CSS ?",
+      "propositions": [
+        "Cascading Style Sheets",
+        "Create Simple Samples",
+        "Cascading Simple Samples",
+        "Create Style Sheets"
+      ],
+      "reponse": "Cascading Style Sheets",
+      "en savoir +": "La bonne réponse est: Cascading Style Sheets"
+    },
+    {
+      "id": 24,
+      "question": "A quoi sert le langage CSS ?",
+      "propositions": [
+        "A réaliser des pages dynamiques",
+        "A insérer du contenu dans une page internet",
+        "A ajouter du style aux documents web",
+        "C'est un sous-ensemble de langages de script comme JavaScript et Python."
+      ],
+      "reponse": "A ajouter du style aux documents web",
+      "en savoir +": "Le CSS est un langage simple qui sert à styler (polices, couleurs, positions, dimensions ...) les documents internet."
+    },
+    {
+      "id": 25,
+      "question": "Dans quoi définit-on les déclarations CSS ?",
+      "propositions": [
+        "Entre deux crochets sépareés par des tirets",
+        "Entre deux guillemets séparées par des slashs",
+        "Entre deux accolades séparés par des points-virgules",
+        "Entre les balises <head>"
+      ],
+      "reponse": "Entre deux accolades séparés par des points-virgules { ... ; ... }",
+      "en savoir +": "Un bloc de déclarations CSS est délimitée par des accolades. Chaque déclaration (couple propriété : valeur) est ponctuée par un point-virgule."
+    }
+]
+
+  
