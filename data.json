@@ -40,19 +40,19 @@
       "id": 4,
       "question": "Laquelle de ces syntaxes est correcte ?",
       "propositions": [
-        "if (a != 2) {} ",
+        "if (a != 2) {}",
         "if a != 2 {}",
-        "if (a <> 2) {} ",
+        "if (a <> 2) {}",
         "if a <> 2 {}"
       ],
-      "reponse": "if (a != 2) {} ",
+      "reponse": "if (a != 2) {}",
       "en savoir +": "La condition d'un if doit toujours être entourée de parenthèses. L'opérateur différent de s'écrit != en JavaScript."
     },
     {
       "id": 5,
       "question": "Quel attribut des noeuds de l'arbre DOM correspond à l'attribut (X)HTML class ?",
       "propositions": [
-        "class ",
+        "class",
         "CLASS",
         "className",
         "name"
@@ -65,7 +65,7 @@
       "question": "Dans un fichier JavaScript externe (.js), il faut:",
       "propositions": [
         "Entourer le code avec les balises <script> et </script>.",
-        "Préciser l’encodage du fichier avec la règle @charset. ",
+        "Préciser l’encodage du fichier avec la règle @charset.",
         "Echapper les caractères spéciaux (X)HTML.",
         "Aucune des réponses précédentes."
       ],
@@ -88,7 +88,7 @@
       "id": 8,
       "question": "Quelle méthode n'existe pas dans le DOM?",
       "propositions": [
-        "document.getElementsByClassName ",
+        "document.getElementsByClassName",
         "document.getElementsByTagName",
         "document.getElementsByAttribute",
         "document.getElementById"
@@ -113,11 +113,11 @@
       "question": "Dans une boucle, l'instruction continue permet de:",
       "propositions": [
         "Continuer l'exécution du code après la boucle.",
-        "Passer à l'itération suivante. ",
-        "Revenir au début de l'itération courante. ",
+        "Passer à l'itération suivante.",
+        "Revenir au début de l'itération courante.",
         "Supprimer toutes les variables globales."
       ],
-      "reponse": "passer à l'itération suivante. ",
+      "reponse": "Passer à l'itération suivante.",
       "en savoir +": "Il est à noter que cette instruction peut être associée à un label."
     },
     {
@@ -136,9 +136,9 @@
       "id": 12,
       "question": "Quelle méthode permet de comparer deux chaînes texte ?",
       "propositions": [
-        "charAt() ",
-        "charCodeAt() ",
-        "indexOf() ",
+        "charAt()",
+        "charCodeAt()",
+        "indexOf()",
         "localeCompare()"
       ],
       "reponse": "localeCompare()",
@@ -153,7 +153,7 @@
         "Permet d'appliquer la théorie de la relativité générale ET la théorie de la relativité restreinte à une mise en page.",
         "Permet de décaler un élément A par rapport à sa position normale, en flux"
       ],
-      "reponse": "permet de décaler un élément A par rapport à sa position normale, en flux",
+      "reponse": "Permet de décaler un élément A par rapport à sa position normale, en flux",
       "en savoir +": "Le positionnement relatif est très semblable au positionnement statique (position: static) qu'adoptent par défaut les éléments d'une page. Un élément positionné en relatif prendra sa place normale dans le flux du document (en fonction de la succession des éléments dans le code HTML, des marges des éléments, des éléments flottants...), mais sera décalé par rapport à cette position de base."
     },
     {
@@ -178,7 +178,7 @@
         "Rien, c’est juste une suite de lettres sans aucune signification."
       ],
       "reponse": "Asynchronous JavaScript and XML",
-      "en savoir +": "Asynchronous JavaScript and XML signifie XML et JavaScript asynchrones. "
+      "en savoir +": "Asynchronous JavaScript and XML signifie XML et JavaScript asynchrones."
     },
     {
       "id": 16,
@@ -196,12 +196,12 @@
       "id": 17,
       "question": "Que peut-on dire de l'attribut innerHTML ?",
       "propositions": [
-        "C'est un attribut qui n'est pas spécifié dans le DOM, mais qui est plutôt bien supporté par les navigateurs modernes. ",
+        "C'est un attribut qui n'est pas spécifié dans le DOM, mais qui est plutôt bien supporté par les navigateurs modernes.",
         "C'est un attribut spécifié dans le DOM.",
         "C'est un attribut qui n'est supporté que par Internet Explorer.",
         "C'est un attribut qui ne fonctionne pas le vendredi."
       ],
-      "reponse": "C'est un attribut qui n'est pas spécifié dans le DOM, mais qui est plutôt bien supporté par les navigateurs modernes. ",
+      "reponse": "C'est un attribut qui n'est pas spécifié dans le DOM, mais qui est plutôt bien supporté par les navigateurs modernes.",
       "en savoir +": "innerHTML a été créé par Microsoft, mais est supporté de façon plutôt homogène par les navigateurs modernes (à part dans certains cas particuliers, par exemple les premières versions de Firefox pour un document servi en tant que application/xhtml+xml)."
     },
     {
@@ -297,7 +297,7 @@
         "Entre deux accolades séparés par des points-virgules",
         "Entre les balises <head>"
       ],
-      "reponse": "Entre deux accolades séparés par des points-virgules { ... ; ... }",
+      "reponse": "Entre deux accolades séparés par des points-virgules",
       "en savoir +": "Un bloc de déclarations CSS est délimitée par des accolades. Chaque déclaration (couple propriété : valeur) est ponctuée par un point-virgule."
     }
 ]

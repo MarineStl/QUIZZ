@@ -1,15 +1,18 @@
 
 start();
 
+// ÉVENEMENT lorsque le formulaire est validé, la fonction validation() est déclenchée
+document.querySelector('form').addEventListener('submit', validation);
 
-// On crée une fonction de RÉCUPÉRATION DU FICHIER JSON contenant le quiz
+
+// FONCTION de RÉCUPÉRATION DU FICHIER JSON contenant le quiz
 // également en “async” car elle utilise fetch() et “await”
 async function getJson()
 {
-   // On récupère les données avec la fonction fetch()
+   // On RECUPERE les données avec la fonction fetch()
    // Ici le fichier s'appelle data.json et il est situé à la racine "/" du dossier projet
    const data = await fetch("http://localhost:5500/data.json");
-   return data.json(); // Retourne les données au format Json
+   return data.json(); // RETOURNE les données au format Json
 }
 
 
@@ -20,53 +23,87 @@ async function getJson()
 // car elle utilise fetch() (et “await” pour attendre une réponse)
 async function start()
 {
-   // On récupère le tableau complet json
+   // On RECUPERE le tableau complet json
    allQuestions = await getJson();
 
-   // On mélange le tableau
+   // On MELANGE le tableau
    shuffleArray(allQuestions);
 
-   // On sélectionne les 4 premières questions du tableau
+   // On SELECTIONNE les 4 premières QUESTIONS du tableau
    allQuestions = allQuestions.slice(0, 4);
    
    
 
    // *** AFFICHAGE DES QUESTIONS ET PROPOSITIONS ***
-   // Boucle parcourant les 4 questions (avec la fonction ForEach)
-   allQuestions.forEach((question, indexQuestion) =>
+   // Un boucle parcourant les 4 questions (avec la fonction ForEach)
+   for(let qIndex = 0; qIndex < allQuestions.length; qIndex++)
    {
+      var question = allQuestions[qIndex]; // Contient les infos de la question en cours de boucle
+
       // * QUESTION *
-      indexQuestion++; // +1 car foreach commence à 0 alors que nos id des <h2> commencent à 1
-      var questionTitle = question.question;
-      // Affichage de la question
-      document.getElementById('question' + indexQuestion).innerText = questionTitle;
+      // On RECUPERE l'élément <h2> contenu dans la <div id="question0"> par exemple ('#question0 h2')
+      var h2 = document.querySelector('#question' + qIndex + ' h2')
+      // On AFFICHE la question
+      h2.innerText = question.question;
 
 
       // * PROPOSITIONS *
-      var propositions = question.propositions;
+      var propositions = question.propositions; // Contient les 4 propositions de la question
+      // On RECUPERE les 4 éléments <label> contenu dans la <div id="question0"> par exemple
+      var input = document.querySelectorAll('#question' + qIndex + ' input'); // SelectorAll des <input> ('#question0 input')
+      var label = document.querySelectorAll('#question' + qIndex + ' label'); // SelectorAll des <label> ('#question0 label')
 
-      // Une autre boucle parcourant les 4 propositions
-      propositions.forEach((proposition, indexProposition) =>
+      // Une boucle pour PARCOURIR les 4 propositions
+      for(let pIndex = 0; pIndex < propositions.length; pIndex++)
       {
-         indexProposition++; // encore +1 pour les id des <label> (proposition1-1, proposition3-2...)
+         // On AFFICHE la proposition dans son <label>
+         label[pIndex].innerText = propositions[pIndex];
+         input[pIndex].setAttribute("value", propositions[pIndex]); // Définit la value de l'<input> s'il est choisi
+         input[pIndex].setAttribute("id", propositions[pIndex]); // L'id de l'<input> pour le relier au texte de son <label>
+         label[pIndex].setAttribute("for", propositions[pIndex]); // Le for du <label> pour le relier à sa case <input>
+      }
 
-         // Ecriture de l'id de l'élément où afficher la proposition (proposition1-1, proposition3-2...)
-         var id = 'proposition' + indexQuestion + '-' + indexProposition;
-         // Affichage de la proposition
-         document.getElementById(id).innerText = proposition;
-      })
-
-   })
-
+   }
 }
 
-// Fonction de MÉLANGE ALÉATOIRE d’un tableau
+
+// VALIDATION DU QUIZ
+function validation(event) {
+   event.preventDefault(); // On BLOQUE le RAFRAICHISSEMENT de la page
+
+   var score = 0; // On créé la VARIABLE du SCORE
+
+
+   // On COMPTE le SCORE en parcourant les 4 questions
+   for(let qIndex = 0; qIndex < allQuestions.length; qIndex++)
+   {
+      // On RECUPERE la valeur de la réponse choisie parmi les 4 <input> de la question
+      inputChecked = document.querySelector('input[name=question' + qIndex + ']:checked');
+
+      // Si la REPONSE n'est pas VIDE
+      if (inputChecked) {
+         var anwser = inputChecked.value; // Réponse choisie
+         var goodAnswer = allQuestions[qIndex].reponse; // Bonne réponse
+         
+         // Si la REPONSE est BONNE
+         if (anwser == goodAnswer) {
+            score++; // +1 point
+            
+         }
+
+      }
+
+   }
+   
+
+   // On AFFICHE le SCORE
+   document.getElementById('score').innerText = 'VOTRE SCORE : ' + score + ' /4';
+}
+
+
+
+
+// FONCTION de MÉLANGE ALÉATOIRE d’un tableau
 function shuffleArray(array) {
    return array.sort(() => 0.5 - Math.random());
 }
-
-
-
-
-
- 

@@ -26,57 +26,12 @@ img {
 	height: auto;
   }
 
-#question1 {
+h2 {
     background-color: #DDBEA9;
     color: rgba(51, 49, 49, 0.925);
     text-align: center;
     font-size: 18px;
     font-family: "LTInternet-Regular";
-
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-left: 9%;
-    margin-right: 9%;
-}
-
-
-#question2 {
-    background-color: #DDBEA9;
-    color: rgba(51, 49, 49, 0.925);
-    text-align: center;
-    font-size: 18px;
-    font-family: "LTInternet-Regular";
-
-
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-left: 9%;
-    margin-right: 9%;
-}
-
-
-#question3 {
-    background-color: #DDBEA9;
-    color: rgba(51, 49, 49, 0.925);
-    text-align: center;
-    font-size: 18px;
-    font-family: "LTInternet-Regular";
-
-
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-left: 9%;
-    margin-right: 9%;
-}
-
-
-#question4 {
-    background-color: #DDBEA9;
-    color: rgba(51, 49, 49, 0.925);
-    text-align: center;
-    font-size: 18px;
-    font-family: "LTInternet-Regular";
-
 
     padding-top: 2%;
     padding-bottom: 2%;
@@ -94,17 +49,12 @@ img {
 
 
 
-.button {
-
-    text-align: center;
-    margin-top: 3%;
-}
-
 .next {
 
     background-color: #DDBEA9;
-    font-family: "LTInternet-Regular";
-    text-transform: uppercase;
+    
+
+    text-align: center;
     font-size: 16px;
     border-radius: 12%;
 
@@ -114,3 +64,9 @@ img {
     padding-right: 3%;
 }
 
+.bouton {
+    text-align: center;
+    margin-top: 3%;
+    font-family: "LTInternet-Regular";
+    text-transform: uppercase;
+}
