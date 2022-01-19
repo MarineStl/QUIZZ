@@ -9,7 +9,7 @@
         "Aucune"
       ],
       "reponse": "Aucune",
-      "en savoir +": "Aucune propriété CSS 2.1 ne permet cet effet."
+      "anecdote": "Aucune propriété CSS 2.1 ne permet cet effet."
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
         
       ],
       "reponse": "Internet Explorer 9",
-      "en savoir +": "Internet Explorer reconnaît à partir de la version 9 les éléments de section (header, footer, section, nav, aside, article)"
+      "anecdote": "Internet Explorer reconnaît à partir de la version 9 les éléments de section (header, footer, section, nav, aside, article)"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
         "Java est une île, ça n'a rien à voir !"
       ],
       "reponse": "Ce sont deux langages différents, malgré quelques points communs dans la syntaxe.",
-      "en savoir +": "Le nom  JavaScript  a été choisi en raison des similitudes de syntaxe"
+      "anecdote": "Le nom  JavaScript  a été choisi en raison des similitudes de syntaxe"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
         "if a <> 2 {}"
       ],
       "reponse": "if (a != 2) {}",
-      "en savoir +": "La condition d'un if doit toujours être entourée de parenthèses. L'opérateur différent de s'écrit != en JavaScript."
+      "anecdote": "La condition d'un if doit toujours être entourée de parenthèses. L'opérateur différent de s'écrit != en JavaScript."
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
         "name"
       ],
       "reponse": "className",
-      "en savoir +": "Il n'a pas été possible d'utiliser class dans le DOM car c'est un mot-clé réservé pour les futures versions de la spécification ECMAScript."
+      "anecdote": "Il n'a pas été possible d'utiliser class dans le DOM car c'est un mot-clé réservé pour les futures versions de la spécification ECMAScript."
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
         "Aucune des réponses précédentes."
       ],
       "reponse": "Aucune des réponses précédentes.",
-      "en savoir +": "L’un des avantages du fait d’utiliser un fichier externe est justement de s’affranchir des problèmes d’inclusion du code JavaScript dans une page (X)HTML. On n’a donc pas à utiliser les balises <script> et </script>, et les caractères spéciaux (X)HTML n’ont pas à être échappés. Quant à l’encodage, il doit être déclaré dans l’en-tête HTTP Content-Type."
+      "anecdote": "L’un des avantages du fait d’utiliser un fichier externe est justement de s’affranchir des problèmes d’inclusion du code JavaScript dans une page (X)HTML. On n’a donc pas à utiliser les balises <script> et </script>, et les caractères spéciaux (X)HTML n’ont pas à être échappés. Quant à l’encodage, il doit être déclaré dans l’en-tête HTTP Content-Type."
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
         "mouseout"
       ],
       "reponse": "mouseclick",
-      "en savoir +": "Il faut utiliser click, qui a d'ailleurs l'avantage de se déclencher aussi avec l'activation par le clavier."
+      "anecdote": "Il faut utiliser click, qui a d'ailleurs l'avantage de se déclencher aussi avec l'activation par le clavier."
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
         "document.getElementById"
       ],
       "reponse": "document.getElementsByAttribute",
-      "en savoir +": "On peut rechercher les éléments par classe, id, nom de balise (tag)."
+      "anecdote": "On peut rechercher les éléments par classe, id, nom de balise (tag)."
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@
         "$b"
       ],
       "reponse": "$b",
-      "en savoir +": "var est un mot-clé ; 2a n'est pas valide car un identifiant ne peut pas commencer par un chiffre ; int est un mot-clé réservé pour les futures versions de la spécification ECMAScript."
+      "anecdote": "var est un mot-clé ; 2a n'est pas valide car un identifiant ne peut pas commencer par un chiffre ; int est un mot-clé réservé pour les futures versions de la spécification ECMAScript."
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@
         "Supprimer toutes les variables globales."
       ],
       "reponse": "Passer à l'itération suivante.",
-      "en savoir +": "Il est à noter que cette instruction peut être associée à un label."
+      "anecdote": "Il est à noter que cette instruction peut être associée à un label."
     },
     {
       "id": 11,
@@ -130,7 +130,7 @@
         "0"
       ],
       "reponse": "0",
-      "en savoir +": "Le modulo suivi de l'affectation divise la variable iNum par 2 puis affecte le reste de la division à iNum, soit zéro."
+      "anecdote": "Le modulo suivi de l'affectation divise la variable iNum par 2 puis affecte le reste de la division à iNum, soit zéro."
     },
     {
       "id": 12,
@@ -142,7 +142,7 @@
         "localeCompare()"
       ],
       "reponse": "localeCompare()",
-      "en savoir +": "La bonne réponse est localeCompare()."
+      "anecdote": "La bonne réponse est localeCompare()."
     },
     {
       "id": 13,
@@ -154,7 +154,7 @@
         "Permet de décaler un élément A par rapport à sa position normale, en flux"
       ],
       "reponse": "Permet de décaler un élément A par rapport à sa position normale, en flux",
-      "en savoir +": "Le positionnement relatif est très semblable au positionnement statique (position: static) qu'adoptent par défaut les éléments d'une page. Un élément positionné en relatif prendra sa place normale dans le flux du document (en fonction de la succession des éléments dans le code HTML, des marges des éléments, des éléments flottants...), mais sera décalé par rapport à cette position de base."
+      "anecdote": "Le positionnement relatif est très semblable au positionnement statique (position: static) qu'adoptent par défaut les éléments d'une page. Un élément positionné en relatif prendra sa place normale dans le flux du document (en fonction de la succession des éléments dans le code HTML, des marges des éléments, des éléments flottants...), mais sera décalé par rapport à cette position de base."
     },
     {
       "id": 14,
@@ -166,7 +166,7 @@
         "N'importe quel lien de la page, mais uniquement au moment où on survole ce lien avec le pointeur de la souris"
       ],
       "reponse": "N'importe quel lien de la page, mais uniquement au moment où on clique sur ce lien",
-      "en savoir +": "La pseudo-classe CSS :active permet de passer des propriétés CSS à une ancre (un lien), propriétés qui ne s'appliqueront qu'à l'état activé, c'est à dire au moment où on active le lien avec la souris, en cliquant dessus."
+      "anecdote": "La pseudo-classe CSS :active permet de passer des propriétés CSS à une ancre (un lien), propriétés qui ne s'appliqueront qu'à l'état activé, c'est à dire au moment où on active le lien avec la souris, en cliquant dessus."
     },
     {
       "id": 15,
@@ -178,7 +178,7 @@
         "Rien, c’est juste une suite de lettres sans aucune signification."
       ],
       "reponse": "Asynchronous JavaScript and XML",
-      "en savoir +": "Asynchronous JavaScript and XML signifie XML et JavaScript asynchrones."
+      "anecdote": "Asynchronous JavaScript and XML signifie XML et JavaScript asynchrones."
     },
     {
       "id": 16,
@@ -190,7 +190,7 @@
         "Quand l'arbre DOM a été construit et toutes les ressources chargées (images, ...)."
       ],
       "reponse": "Quand l'arbre DOM a été construit et toutes les ressources chargées (images, ...).",
-      "en savoir +": "Ce comportement peut d'ailleurs être parfois gênant si l'on veut éviter un clignotement  au chargement de la page. Il faut alors se tourner vers des solutions propriétaires comme l'événement DOMContentLoaded supporté par Firefox et Opera."
+      "anecdote": "Ce comportement peut d'ailleurs être parfois gênant si l'on veut éviter un clignotement  au chargement de la page. Il faut alors se tourner vers des solutions propriétaires comme l'événement DOMContentLoaded supporté par Firefox et Opera."
     },
     {
       "id": 17,
@@ -202,7 +202,7 @@
         "C'est un attribut qui ne fonctionne pas le vendredi."
       ],
       "reponse": "C'est un attribut qui n'est pas spécifié dans le DOM, mais qui est plutôt bien supporté par les navigateurs modernes.",
-      "en savoir +": "innerHTML a été créé par Microsoft, mais est supporté de façon plutôt homogène par les navigateurs modernes (à part dans certains cas particuliers, par exemple les premières versions de Firefox pour un document servi en tant que application/xhtml+xml)."
+      "anecdote": "innerHTML a été créé par Microsoft, mais est supporté de façon plutôt homogène par les navigateurs modernes (à part dans certains cas particuliers, par exemple les premières versions de Firefox pour un document servi en tant que application/xhtml+xml)."
     },
     {
       "id": 18,
@@ -214,7 +214,7 @@
         "listen"
       ],
       "reponse": "addEventListener",
-      "en savoir +": "attachEvent est l'équivalent propriétaire de cette méthode pour IE."
+      "anecdote": "attachEvent est l'équivalent propriétaire de cette méthode pour IE."
     },
     {
       "id": 19,
@@ -226,7 +226,7 @@
         "ECMAScript 2018"
       ],
       "reponse": "ECMAScript 6",
-      "en savoir +": ""
+      "anecdote": ""
     },
     {
       "id": 20,
@@ -238,7 +238,7 @@
         "inline-table"
       ],
       "reponse": "table-legend",
-      "en savoir +": "La propriété CSS display accepte de nombreuses valeurs. Sans compter la valeur générique inherit, 16 valeurs possibles en tout d'après la spécification CSS 2.1. Parmi ces 16 valeurs, 10 concernent les affichages de type tableau. Comme par exemple la valeur table-caption, que vous avez sans doute confondu avec notre réponse erronée, table-legend. Cette dernière n'existe pas."
+      "anecdote": "La propriété CSS display accepte de nombreuses valeurs. Sans compter la valeur générique inherit, 16 valeurs possibles en tout d'après la spécification CSS 2.1. Parmi ces 16 valeurs, 10 concernent les affichages de type tableau. Comme par exemple la valeur table-caption, que vous avez sans doute confondu avec notre réponse erronée, table-legend. Cette dernière n'existe pas."
     },
     {
       "id": 21,
@@ -250,7 +250,7 @@
         "Le signe deux points (:)"
       ],
       "reponse": "Le signe deux points (:)",
-      "en savoir +": "La propriété font-size est séparée de sa valeur (exprimée ici en unité variable -em) par deux points :"
+      "anecdote": "La propriété font-size est séparée de sa valeur (exprimée ici en unité variable -em) par deux points :"
     },
     {
       "id": 22,
@@ -262,7 +262,7 @@
         "Il n'y a pas de limite, on peut en créer autant que l'on veut"
       ],
       "reponse": "Il n'y a pas de limite, on peut en créer autant que l'on veut",
-      "en savoir +": "Un fichier CSS n'est limité ni par son poids, ni par le nombre de ses règles. Vous pouvez donc coder de gros fichiers mais pensez quand même à les optimiser !"
+      "anecdote": "Un fichier CSS n'est limité ni par son poids, ni par le nombre de ses règles. Vous pouvez donc coder de gros fichiers mais pensez quand même à les optimiser !"
     },
     {
       "id": 23,
@@ -274,7 +274,7 @@
         "Create Style Sheets"
       ],
       "reponse": "Cascading Style Sheets",
-      "en savoir +": "La bonne réponse est: Cascading Style Sheets"
+      "anecdote": "La bonne réponse est: Cascading Style Sheets"
     },
     {
       "id": 24,
@@ -286,7 +286,7 @@
         "C'est un sous-ensemble de langages de script comme JavaScript et Python."
       ],
       "reponse": "A ajouter du style aux documents web",
-      "en savoir +": "Le CSS est un langage simple qui sert à styler (polices, couleurs, positions, dimensions ...) les documents internet."
+      "anecdote": "Le CSS est un langage simple qui sert à styler (polices, couleurs, positions, dimensions ...) les documents internet."
     },
     {
       "id": 25,
@@ -298,7 +298,7 @@
         "Entre les balises <head>"
       ],
       "reponse": "Entre deux accolades séparés par des points-virgules",
-      "en savoir +": "Un bloc de déclarations CSS est délimitée par des accolades. Chaque déclaration (couple propriété : valeur) est ponctuée par un point-virgule."
+      "anecdote": "Un bloc de déclarations CSS est délimitée par des accolades. Chaque déclaration (couple propriété : valeur) est ponctuée par un point-virgule."
     }
 ]
 

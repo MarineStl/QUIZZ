@@ -26,6 +26,11 @@ img {
 	height: auto;
   }
 
+.name {
+    margin-left: 40%;
+}
+
+
 h2 {
     background-color: #DDBEA9;
     color: rgba(51, 49, 49, 0.925);
@@ -39,7 +44,18 @@ h2 {
     margin-right: 9%;
 }
 
+h3 {
+    color: rgb(34, 33, 33);
+    background-color: seashell;
+    font-style: italic;
+    font-size: 16px;
+    font-family: "LTInternet-Regular";
+    text-align: center;
 
+    margin-left: 9%;
+    margin-right: 9%;
+
+}
 
 .answers {
 
@@ -60,13 +76,21 @@ h2 {
 
     padding-top: 1%;
     padding-bottom: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .bouton {
     text-align: center;
-    margin-top: 3%;
+    margin-top: 1%;
     font-family: "LTInternet-Regular";
     text-transform: uppercase;
+}
+
+.valid {
+    color: #333c24;
+}
+
+.invalid {
+    color: #5c0e0f;
 }

@@ -1,7 +1,9 @@
 
+var Nom = prompt ('Bienvenue sur le QUIZ!, veuillez entrer votre prénom')
+
 start();
 
-// ÉVENEMENT lorsque le formulaire est validé, la fonction validation() est déclenchée
+// ÉVENEMENT lorsque le FORMULAIRE est validé, la FONCTION VALIDATION() est déclenchée
 document.querySelector('form').addEventListener('submit', validation);
 
 
@@ -14,8 +16,6 @@ async function getJson()
    const data = await fetch("http://localhost:5500/data.json");
    return data.json(); // RETOURNE les données au format Json
 }
-
-
 
 
 // FONCTION PRINCIPALE DE L'APPLICATION
@@ -77,33 +77,50 @@ function validation(event) {
    // On COMPTE le SCORE en parcourant les 4 questions
    for(let qIndex = 0; qIndex < allQuestions.length; qIndex++)
    {
-      // On RECUPERE la valeur de la réponse choisie parmi les 4 <input> de la question
+      // On RECUPERE l'input de la réponse choisie parmi les 4 <input> de la question
       inputChecked = document.querySelector('input[name=question' + qIndex + ']:checked');
 
       // Si la REPONSE n'est pas VIDE
       if (inputChecked) {
-         var anwser = inputChecked.value; // Réponse choisie
-         var goodAnswer = allQuestions[qIndex].reponse; // Bonne réponse
+         // REPONSE choisie
+         var anwser = inputChecked.value; 
+         // BONNE réponse
+         var goodAnswer = allQuestions[qIndex].reponse; 
+         var anecdote = allQuestions[qIndex].anecdote;
+         var h3 = document.querySelector('#question' + qIndex + ' h3');
          
          // Si la REPONSE est BONNE
          if (anwser == goodAnswer) {
             score++; // +1 point
+
+
+            // parentNode = Selectionne le parent de l'input
+            // On AFFICHE la bonne réponse en VERT
+            inputChecked.parentNode.classList.add("valid");
+            // et l'ANECDOTE dans les balises h3
+            h3.innerText = anecdote;
             
+         }
+            // et la mauvaise en ROUGE 
+            else {
+            inputChecked.parentNode.classList.add("invalid");
+            }
          }
 
       }
 
-   }
    
-
    // On AFFICHE le SCORE
    document.getElementById('score').innerText = 'VOTRE SCORE : ' + score + ' /4';
+
+   //LOCAL STORAGE
+   localStorage.setItem (Nom, score);
+   sockage = localStorage;
 }
-
-
 
 
 // FONCTION de MÉLANGE ALÉATOIRE d’un tableau
 function shuffleArray(array) {
    return array.sort(() => 0.5 - Math.random());
 }
+
