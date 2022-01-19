@@ -18,7 +18,8 @@ async function getJson()
 }
 
 
-// FONCTION PRINCIPALE DE L'APPLICATION
+//::::::::::::::::::::::::::::::::::::::FONCTION PRINCIPALE DE L'APPLICATION::::::::::::::::::::::::::::::::://
+
 // Il faut la définir en “async” (asynchrone)
 // car elle utilise fetch() (et “await” pour attendre une réponse)
 async function start()
@@ -34,7 +35,8 @@ async function start()
    
    
 
-   // *** AFFICHAGE DES QUESTIONS ET PROPOSITIONS ***
+   //:::::::::::::::::::::::::::::::::::AFFICHAGE DES QUESTIONS ET PROPOSITIONS::::::::::::::::::::::::::::::://
+
    // Un boucle parcourant les 4 questions (avec la fonction ForEach)
    for(let qIndex = 0; qIndex < allQuestions.length; qIndex++)
    {
@@ -67,7 +69,8 @@ async function start()
 }
 
 
-// VALIDATION DU QUIZ
+//::::::::::::::::::::::::::::::::::::::::::VALIDATION DU QUIZ:::::::::::::::::::::::::::::::::::::::::::::::://
+
 function validation(event) {
    event.preventDefault(); // On BLOQUE le RAFRAICHISSEMENT de la page
 
@@ -114,45 +117,48 @@ function validation(event) {
    document.getElementById('score').innerText = 'MEILLEURS SCORES : ' + score + ' /4';
 
 
-var point = {        // je crée un objet
+ // ::::::::::::::::::::::::::::::::::::::::PARTIE LOCALESTORAGE !:::::::::::::::::::::::::::::::::::::::::::://
+
+var point = {       
+    // Je CREE un objet
    prenom : prenom, score : score
  }
 
-var scores = JSON.parse(localStorage.getItem("prenom")); // recuperer sous forme de tableau
+var scores = JSON.parse(localStorage.getItem("prenom")); 
+// Je RECUPERE sous forme de tableau
 console.log(scores);
 if (scores === null){
-scores = [];            //  je crée une tableau vide
+//  Je CREE une tableau vide
+scores = [];            
+
 }
 scores.push(point);
-localStorage.setItem("prenom",JSON.stringify(scores)); // j ajoute ou je mets a jour mon mlocalstorage et stringify le transforme en chaine JSON
-scores.sort((a,b) => b.score - a.score);   // fonction sort premet de trier ( ici du plus grand au plus petit)
-for( let i = 0; i < 5 ; i++){
-const prenomScore = document.createTextNode((scores[i]. prenom) + " : "); //crée une constante qui va placer mes elements ou je veux
+// J'AJOUTE/ METS A JOUR mon LOCALSTORAGE et STRINGIFY le TRANSFORME en chaine JSON
+localStorage.setItem("prenom",JSON.stringify(scores)); 
+// FONCTION  qui permet de TRIER du plus petit au plus grand
+scores.sort((a,b) => b.score - a.score);   
+for( let i = 0; i < 5 ; i++){ 
+// Je CREE une CONSTANTE qui va PLACER mes ELEMENTS
+const prenomScore = document.createTextNode((scores[i]. prenom) + " : ");
 const scorestorage = document.createTextNode(scores[i].score);
-var p = document.createElement("p");   //je crée un paragraphe avec la balise p
-var topscore = document.getElementById("score");   //recupre ma div dans mon HTML
-p.appendChild(prenomScore);      //dans le p on insere la premiere partie de mon  createtxtnode 
-p.appendChild(scorestorage);   //dans le p on insere la deuxieme partie de mon  createtxtnode 
-topscore.appendChild(p);       // j insere mon element p dans ma div que j ai recuperer (var topscore)
+// Je CREE un PARAGRAPHE avec la balise P
+var p = document.createElement("p");   
+// Je RECUPERE ma DIV dans mon HTML
+var topscore = document.getElementById("score");   
+// On commence à INSERER dans le P la partie du CREATETXTNODE
+p.appendChild(prenomScore);  
+// Puis la DERNIERE PARTIE  
+p.appendChild(scorestorage);   
+// On INSERE L'ELEMENT P dans ma DIV que j ai RECUPERE (var topscore)
+topscore.appendChild(p);       
 
 }
 }
 
 
 
+//::::::::::::::::::::::::::::::::::FONCTION de MÉLANGE ALÉATOIRE d’un tableau::::::::::::::::::::::::::::::::://
 
-
-
-
-
-
-
-
-
-
-
-
-// FONCTION de MÉLANGE ALÉATOIRE d’un tableau
 function shuffleArray(array) {
    return array.sort(() => 0.5 - Math.random());
 }
