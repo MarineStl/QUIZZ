@@ -111,7 +111,7 @@ function validation(event) {
 
    
    // On AFFICHE le SCORE
-   document.getElementById('score').innerText = 'VOTRE SCORE : ' + score + ' /4';
+   document.getElementById('score').innerText = 'MEILLEURS SCORES : ' + score + ' /4';
 
 
 var point = {        // je crée un objet

@@ -46,7 +46,6 @@ h2 {
 
 h3 {
     color: rgb(34, 33, 33);
-    background-color: seashell;
     font-style: italic;
     font-size: 16px;
     font-family: "LTInternet-Regular";
@@ -82,7 +81,7 @@ h3 {
 
 .bouton {
     text-align: center;
-    margin-top: 1%;
+    margin-top: 3%;
     font-family: "LTInternet-Regular";
     text-transform: uppercase;
 }
@@ -93,4 +92,15 @@ h3 {
 
 .invalid {
     color: #5c0e0f;
+}
+
+#score {
+    border-color: #ff9100;
+    background-color: #ff9100;
+
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin-top: 5%;
+
+    
 }
